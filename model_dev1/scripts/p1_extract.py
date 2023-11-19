@@ -13,7 +13,6 @@ df.sample(5)
 df.columns
 
 
-df.LOCATION_DESC.isna().sum()
 
 
 ## Saving data as a csv to model_dev1/data/raw folder

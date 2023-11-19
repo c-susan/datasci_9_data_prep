@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divUW8HA894XO1RF5N"></div>
+        <div class="lime top_div" id="top_divABWVEMWXUW5GY3O"></div>
         
         <script>
-        var top_div = d3.select('#top_divUW8HA894XO1RF5N').classed('lime top_div', true);
+        var top_div = d3.select('#top_divABWVEMWXUW5GY3O').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["female", "male"], [0.05399644374847412, 0.9460035562515259]);
+            var pp = new lime.PredictProba(pp_svg, ["female", "male"], [0.26356080174446106, 0.7360108494758606, 0.0004283385642338544]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["female", "male"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["precinct > 0.56", 0.08955980989147692], ["perp_race > 0.17", 0.0509480109127661], ["boro > 0.66", -0.030597967489845817], ["perp_sex > 0.03", 0.029655717155673007], ["vic_age_group <= -0.87", -0.02878128127309573], ["perp_age_group > 1.29", 0.023014326049588783], ["jurisdiction_code <= -0.43", -0.018655028785168316], ["occur_date > 0.80", -0.0061489074081067675], ["vic_race > 0.10", -0.00566508364829335]], 1, exp_div);
+                exp.show([["perp_race <= -0.46", -0.0722705679904723], ["0.06 < precinct <= 0.56", 0.05309138488159412], ["vic_age_group <= -0.87", 0.04337553926734569], ["vic_race <= -0.55", -0.03387274475849686], ["occur_date > 0.80", 0.03015932692840056], ["statistical_murder_flag <= -0.50", -0.01992678106881106], ["perp_age_group > 1.29", 0.008789535528738747], ["jurisdiction_code <= -0.43", 0.0048315531757967016], ["-1.09 < boro <= -0.22", 0.00033944414837183565]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["precinct", "1.76", 0.08955980989147692], ["perp_race", "0.80", 0.0509480109127661], ["boro", "1.53", -0.030597967489845817], ["perp_sex", "2.04", 0.029655717155673007], ["vic_age_group", "-0.87", -0.02878128127309573], ["perp_age_group", "1.65", 0.023014326049588783], ["jurisdiction_code", "-0.43", -0.018655028785168316], ["occur_date", "1.28", -0.0061489074081067675], ["vic_race", "2.05", -0.00566508364829335]], 1, raw_div);
+            exp.show_raw_tabular([["perp_race", "-0.46", -0.0722705679904723], ["precinct", "0.35", 0.05309138488159412], ["vic_age_group", "-0.87", 0.04337553926734569], ["vic_race", "-0.55", -0.03387274475849686], ["occur_date", "1.28", 0.03015932692840056], ["statistical_murder_flag", "-0.50", -0.01992678106881106], ["perp_age_group", "1.65", 0.008789535528738747], ["jurisdiction_code", "-0.43", 0.0048315531757967016], ["boro", "-0.22", 0.00033944414837183565]], 1, raw_div);
         
         </script>
         </body></html>

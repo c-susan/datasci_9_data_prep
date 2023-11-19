@@ -131,12 +131,6 @@ df_mapping_vic_age_group.head(5)
 df_mapping_vic_age_group.to_csv('model_dev1/data/processed/mapping_vic_age_group.csv', index=False)
 
 ############
-## vict_sex
-df.vic_sex.value_counts()
-## dropping row if sex is equal to U 
-df = df[df['vic_sex'] != 'U' ]
-df.vic_sex.value_counts()
-
 ## Encoding the vic_sex column
 enc = OrdinalEncoder()
 enc.fit(df[['vic_sex']])
