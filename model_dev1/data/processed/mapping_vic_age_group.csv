@@ -1,0 +1,8 @@
+vic_age_group,vic_age_group_ordinal
+1022,0
+18-24,1
+25-44,2
+45-64,3
+65+,4
+<18,5
+UNKNOWN,6
