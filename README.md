@@ -63,7 +63,7 @@ df.drop(to_drop, axis=1, inplace=True, errors='ignore')
 
 
 ## Dataset Splitting
-In the `p3_compute.py` filw of each `model_dev` folder, script was created  to split each dataset into three parts:
+In the `p3_compute.py` file in each `model_dev` folder, script was created  to split each dataset into three parts:
 + Training data (`train_x`, `train_y`)
 + Validation data (`val_x`, `val_y`)
 + Testing data (`test_x`, `test_y`) 
